@@ -15,7 +15,7 @@ body{
 header{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     min-height: 20vh;
 
@@ -23,7 +23,7 @@ header{
 
 header h2{
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 .options{
@@ -34,4 +34,48 @@ header h2{
 
 .options .column span{
     margin-right: 15px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.keys-toggle{
+    display: flex;
+    align-items: center;
+}
+
+.keys-toggle input{
+    width: 60px;
+    height: 25px;
+    appearance: none;
+    border-radius: 100px;
+    border: 1px solid #6d6d6d;
+    background-color: none;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.keys-toggle input:checked{
+    background-color: #d411e6;
+}
+
+.keys-toggle input::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #9304a0;
+    position: absolute;
+    left: 5px;
+    border-radius: inherit;
+    transition: all 0.4s ease;
+}
+
+.keys-toggle input:checked::before{
+    left: 35px;
+}
+
+.volume input{
+    accent-color: #d411e6;
+    width: 15rem;
 }
