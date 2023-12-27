@@ -114,7 +114,7 @@ header span{
     box-shadow: inset 0px -10px rgba(0, 0, 0, 0.8);
 }
 
-.piano-keys .white:active{
+.piano-keys .white.active{
     box-shadow: none;
 }
 
@@ -129,6 +129,6 @@ header span{
     box-shadow: inset 0px -5px #4e4e4ecc;
 }
 
-.piano-keys .black:active{
+.piano-keys .black.active{
     box-shadow: none;
 }
