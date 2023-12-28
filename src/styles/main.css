@@ -132,3 +132,7 @@ header span{
 .piano-keys .black.active{
     box-shadow: none;
 }
+
+.piano-keys .key.hide span{
+    display: none;
+}
